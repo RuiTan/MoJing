@@ -27,31 +27,31 @@
     <!-- AIUI Admin skins -->
     <link rel="stylesheet" href="main/css/skins/_all-skins.css">
 
-    <script src="/vue.js"></script>
+<!--    <script src="/vue.js"></script>-->
 
     <!-- ./wrapper -->
 
     <!-- jQuery 3 -->
     <script src="assets/vendor_components/jquery-3.3.1/jquery-3.3.1.min.js"></script>
 
-    <!-- popper -->
-    <script src="assets/vendor_components/popper/dist/popper.min.js"></script>
+<!--    &lt;!&ndash; popper &ndash;&gt;-->
+<!--    <script src="assets/vendor_components/popper/dist/popper.min.js"></script>-->
 
-    <!-- Bootstrap 4.0-->
-    <script src="main/js/bootstrap.js"></script>
+<!--    &lt;!&ndash; Bootstrap 4.0&ndash;&gt;-->
+<!--    <script src="main/js/bootstrap.js"></script>-->
 
-    <!-- SlimScroll -->
-    <script src="assets/vendor_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="assets/vendor_components/select2/dist/js/select2.full.js"></script>
-    <!-- FastClick -->
-    <script src="assets/vendor_components/fastclick/lib/fastclick.js"></script>
+<!--    &lt;!&ndash; SlimScroll &ndash;&gt;-->
+<!--    <script src="assets/vendor_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>-->
+<!--    <script src="assets/vendor_components/select2/dist/js/select2.full.js"></script>-->
+<!--    &lt;!&ndash; FastClick &ndash;&gt;-->
+<!--    <script src="assets/vendor_components/fastclick/lib/fastclick.js"></script>-->
 
-    <!-- Sparkline -->
-    <script src="assets/vendor_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!--    &lt;!&ndash; Sparkline &ndash;&gt;-->
+<!--    <script src="assets/vendor_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>-->
 
-    <!-- Magnific popup JavaScript -->
-    <script src="assets/vendor_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-    <script src="assets/vendor_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+<!--    &lt;!&ndash; Magnific popup JavaScript &ndash;&gt;-->
+<!--    <script src="assets/vendor_components/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>-->
+<!--    <script src="assets/vendor_components/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>-->
 
     <!-- AIUI Admin App -->
     <script src="main/js/template.js"></script>
@@ -499,10 +499,10 @@
                     }
                     div = div.replaceAll('#{id}', data[i]._id);
                     div = div.replace('#{score}', data[i].recommend_index.toFixed(2));
-                    top_path = data[i].top.image_path
-                    bottom_path = data[i].bottom.image_path
-                    top_path.replaceAll('&eacute;', 'e')
-                    bottom_path.replaceAll('&eacute;', 'e')
+                    let top_path = data[i].top.image_path
+                    let bottom_path = data[i].bottom.image_path
+                    top_path = top_path.replaceAll('&eacute;', 'e')
+                    bottom_path = bottom_path.replaceAll('&eacute;', 'e')
                     div = div.replace('#{topimg}', "images/df/"+top_path);
                     div = div.replace('#{bottomimg}', "images/df/"+bottom_path);
                     $("#hot-list").append(div);
@@ -615,10 +615,10 @@
                     }
                     div = div.replaceAll('#{id}', data[i]._id);
                     div = div.replace('#{score}', data[i].recommend_index.toFixed(2));
-                    top_path = data[i].top.image_path
-                    bottom_path = data[i].bottom.image_path
-                    top_path.replaceAll('&eacute;', 'e')
-                    bottom_path.replaceAll('&eacute;', 'e')
+                    let top_path = data[i].top.image_path
+                    let bottom_path = data[i].bottom.image_path
+                    top_path = top_path.replaceAll('&eacute;', 'e')
+                    bottom_path = bottom_path.replaceAll('&eacute;', 'e')
                     div = div.replace('#{topimg}', "images/df/"+top_path);
                     div = div.replace('#{bottomimg}', "images/df/"+bottom_path);
                     $("#hot-list").append(div);
